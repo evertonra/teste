@@ -2,12 +2,12 @@
   {
     "id": "quartosecreto",
     "nome": "Quarto Secreto",
-    "img": "../img/estudio.png"
+    "img": "/img/estudio.png"
   },
   {
     "id": "quartosecreto2",
     "nome": "quartosecreto2",
-    "img": "../img/estudio.png"
+    "img": "./img/estudio.png"
   },
   {
     "id": "quartosecreto3",
