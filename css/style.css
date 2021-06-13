@@ -83,7 +83,7 @@ a {
   height: 90vh;
   background: url(../img/fundo3.png) no-repeat;
   background-size:cover;
-  filter: blur(5px);
+  filter: blur(6px);
   transition: 2s;
 }
 
@@ -101,7 +101,7 @@ a {
 }
 
 .logo:hover {
-  filter: blur(5px);
+  filter: blur(2px);
   transform: scale(1.1);
 }
 
@@ -130,8 +130,9 @@ a {
   margin: 0 15px;
   width: 20%;
   font-family: Intro Rust;
-  box-shadow: 0 0 1rem rgba(0,0,0,.5);
+  box-shadow: 0 0 1rem rgba(63, 55, 139, 0.267);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .sites h2 {
@@ -247,3 +248,109 @@ background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%,
   color: rgb(247, 167, 167);
 }
 
+/* Footer */
+
+.footer .box {
+  background-color: #fff;
+  width: 100%; 
+  position: relative;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.box .card ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.box .card ul li a {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #220bec;
+  margin: 0 10px;
+  transition: 0.5s;
+  padding: 27px;
+}
+
+.box .card ul li a span {
+  position: absolute;
+  transition: transform .5s;
+}
+
+.box .card ul li a span:nth-child(1),
+.box .card ul li a span:nth-child(3) {
+  width: 100%;
+  height: 2px;
+  background: #220bec;
+}
+
+.box .card ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+.box .card ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+
+.box .card ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+.box .card ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.box .card ul li a span:nth-child(2),
+.box .card ul li a span:nth-child(4) {
+  width: 2px;
+  height: 100%;
+  background: #220bec;
+}
+
+.box .card ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.box .card ul li a:hover span:nth-child(2) {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.box .card ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.box .card ul li a:hover span:nth-child(4) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
