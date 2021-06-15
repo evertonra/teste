@@ -1,6 +1,6 @@
 {
   "id": "quartosecreto4",
   "nome": "Quartosecreto4",
-  "img": "../../img/estudio.png",
+  "img": "./img/estudio.png",
   "link": "https://estudioquartosecreto.com.br/"
 }

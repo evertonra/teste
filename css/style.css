@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
 
 * {
@@ -15,7 +15,6 @@ html {
 body,h1,h2,ul,li,p{
   margin: 0;
   padding: 0;
-  
 }
 
 img {
@@ -36,8 +35,36 @@ a {
   display: flex;
   padding: 0 10rem;
   justify-content: space-between;
-  height: 10vh;
-  
+  height: 20vh;
+}
+
+.nav-logo{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%
+}
+
+.nav-logo a h1 {
+  font-family: Intro Rust;
+  color: #06003b;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.nav-logo a h4 {
+  font-family: "IBM Plex Serif";
+  color: #06003b;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .nav img {
@@ -55,11 +82,15 @@ a {
   padding-left: 3rem;
 }
 
-.nav ul li a{
-  color: black;
+.nav ul li a {
+  color: #06003b;
   font-size: 1.4rem;
-  font-family: "IBM Plex Serif";
+  font-family: Intro Rust;
   padding: 7px;
+}
+
+.nav ul li a:hover {
+  color: rgb(146, 2, 26);
 }
 
 /* Main */
@@ -68,7 +99,7 @@ a {
 
 .home {
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,15 +108,34 @@ a {
 
 .home .bg {
   position: absolute;
-  top: 10vh;
+  top: 20vh;
   left: 0;
   width: 100vw;
-  height: 90vh;
-  background: url(../img/fundo3.png) no-repeat;
+  height: 80vh;
+  background: url(../img/fundoo.jpg) no-repeat;
   background-size:cover;
   filter: blur(6px);
   transition: 2s;
 }
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content:space-between;
+}
+
+.bg-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  color: #fff;
+  font-family: "IBM Plex Serif";
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+
 
 .home-h1 {
   display: none;
@@ -102,13 +152,10 @@ a {
 
 .logo:hover {
   filter: blur(2px);
-  transform: scale(1.1);
 }
 
 .logo:hover ~ .bg {
   filter: blur(0);
-  transform: scale(1);
-  height: 90vh;
 }
 
 /* Portfólio */
@@ -120,7 +167,6 @@ a {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  border: 1px solid red;
 }
 
 .sites {
@@ -174,7 +220,7 @@ a {
   align-items: center;
   z-index: 5;
   background: #fff;
-  animation: fadeIn .3s forwards;
+  animation: fadeIn .7s forwards;
 }
 
 @keyframes fadeIn {
@@ -191,7 +237,7 @@ a {
 
 .modal-fechar {
   border-radius: 50%;
-  border: 2px solid #000;
+  border: 2px solid #06003b;
   width: 40px;
   height: 40px;
   position: absolute;
@@ -202,23 +248,26 @@ a {
   box-shadow: 0px 3px 4px rgba(0,0,0,.1), 0px 4px 10px rgba(0,0,0,.2);
   font-family: "IBM Plex Serif";
   font-weight: bold;
+  color: #06003b;
 }
 
 .modal-titulo-bg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #B8E1FC;
-background: -webkit-radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
-background: -moz-radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
-background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
+  background: #d0b8fc;
+  background: -webkit-radial-gradient(circle farthest-corner at center center, #ffffff 0%, #000000 100%);
+  background: -moz-radial-gradient(circle farthest-corner at center center, #ffffff 0%, #000000 100%);
+  background: radial-gradient(circle farthest-corner at center center, #ffffff 0%, #000000 100%);
+  opacity: 0.9;
   width: 100%;
 }
 
 .modal-titulo {
   font-size: 3rem;
-  font-family: "IBM Plex Serif";
-  color: black;
+  font-family: Intro Rust;
+  color: #06003b;
+  font-weight: 400;
   margin: 20px 0;
 }
 
@@ -238,17 +287,23 @@ background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%,
   color: white;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   padding: 10px 25px;
   font-family: "IBM Plex Serif";
   bottom: -60px;
 }
 
 .modal-button:hover {
-  color: rgb(247, 167, 167);
+  color: rgb(146, 2, 26);;
 }
 
 /* Footer */
+
+.footer {
+  border-top: 3px dashed #06003b;
+  padding-top: 40px;
+}
 
 .footer .box {
   background-color: #fff;
@@ -258,6 +313,13 @@ background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%,
   align-items: center; 
   justify-content: center;
   margin: 100px 0;
+}
+
+.footer h1 {
+  text-align: center;
+  font-family: Intro Rust;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .box .card ul {
@@ -279,7 +341,7 @@ background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%,
   font-size: 40px;
   text-align: center;
   text-decoration: none;
-  color: #220bec;
+  color: #06003b;
   margin: 0 10px;
   transition: 0.5s;
   padding: 27px;
@@ -294,7 +356,7 @@ background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%,
 .box .card ul li a span:nth-child(3) {
   width: 100%;
   height: 2px;
-  background: #220bec;
+  background: #06003b;
 }
 
 .box .card ul li a span:nth-child(1) {
@@ -326,7 +388,7 @@ background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%,
 .box .card ul li a span:nth-child(4) {
   width: 2px;
   height: 100%;
-  background: #220bec;
+  background: #06003b;
 }
 
 .box .card ul li a span:nth-child(2) {
