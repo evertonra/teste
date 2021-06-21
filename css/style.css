@@ -5,7 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden; 
 }
 
 * {
@@ -98,7 +97,6 @@ a {
 /* Home */
 
 .home {
-  width: 100vw;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -110,7 +108,7 @@ a {
   position: absolute;
   top: 20vh;
   left: 0;
-  width: 100vw;
+  width: 99vw;
   height: 80vh;
   background: url(../img/fundoo.jpg) no-repeat;
   background-size:cover;
@@ -163,6 +161,12 @@ a {
   font-weight: bold;
   margin-top: 2.5rem;
 }
+.infos h4 {
+  font-family: "IBM Plex Serif";
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+}
 
 .infos p {
   font-family: "IBM Plex Serif";
@@ -203,7 +207,7 @@ a {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 90vw;
 }
 
 .sites {
@@ -341,7 +345,7 @@ a {
 /* Footer */
 
 .footer {
-  border-top: 3px dashed #06003b;
+  border-top: 3px outset #06003b;
   padding-top: 40px;
 }
 
