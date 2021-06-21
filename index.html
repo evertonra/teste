@@ -34,16 +34,22 @@
     <main>
       <section class="home" id="home">
         <h1 class="home-h1">Home</h1>
-        <img class="logo" src="./img/logo.png" alt="">
+        <!-- <img class="logo" src="./img/logo.png" alt=""> -->
+        <div class="infos">
+          <h1>Desenvolvimento Web<br>Front-End</h1>
+          <h3>Vue.js - JavaScript - CSS - HTML</h3>
+          <p>Sites 100%<br>Responsivos e Reativos</p>
+          <p>Landing pages, Portfólios</p>
+        </div>
         <div class="bg">
-          <div class="bg-text">
+          <!-- <div class="bg-text">
             <p>Desenvolvimento Web <br>Front-End</p>
             <p>Vue.js<br>JavaScript<br>CSS<br>HTML</p>
           </div>
           <div class="bg-text">
             <p>Criação de Portfólios,<br></p>
             <p>Sites 100%<br>Responsivos e Reativos</p>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -54,7 +60,26 @@
         </div>
       </section>
 
-      <section class="modal" v-if="site" @click="fecharModal">
+
+  
+      <transition v-if="site"
+      appear
+      name="fade">
+        <section class="modal"  @click="fecharModal">
+          <div class="modal-container">
+            <div class="modal-titulo-bg">
+              <h1 class="modal-titulo">{{site.nome}}</h1>
+            </div>
+            <div class="modal-img">
+              <img :src="site.img" alt="site.nome">
+            </div>
+            <a class="modal-button" target="_blank" :href="site.link">Ver Site</a>
+            <button @click="site = false" class="modal-fechar">X</button>
+          </div>
+        </section>
+      </transition>
+      
+      <!-- <section class="modal" v-if="site" @click="fecharModal">
         <div class="modal-container">
           <div class="modal-titulo-bg">
             <h1 class="modal-titulo">{{site.nome}}</h1>
@@ -65,7 +90,8 @@
           <a class="modal-button" target="_blank" :href="site.link">Ver Site</a>
           <button @click="site = false" class="modal-fechar">X</button>
         </div>
-      </section>
+      </section>  -->
+      
 
       <!-- <section class="portfolio" id="portfolio">
 

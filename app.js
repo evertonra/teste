@@ -3,6 +3,7 @@ const vm = new Vue({
   data: {
     sites: [],
     site: false,
+    ativo: false,
   },
   methods: {
     fetchSites() {
@@ -24,13 +25,16 @@ const vm = new Vue({
       window.scrollTo({
         top: this.scrollY,
         behavior: "smooth",
+        
       })
     },
     fecharModal({ target, currentTarget }) {
       if (target === currentTarget) this.site = false;
+      
     },
   },
   created() {
     this.fetchSites()
   },
 })
+
