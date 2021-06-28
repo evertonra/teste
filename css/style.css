@@ -169,7 +169,7 @@ a {
   cursor: default;
   position: relative;
   z-index: 1;
-  /* border: 1px solid white; */
+  border: 1px solid white; 
   border-radius: 20px;
   transition: 2s;
   padding: 15px;
@@ -217,7 +217,7 @@ a {
 }
 .infos:hover {
   filter: blur(2px);
-  border: 2px solid white;
+  border: 3px solid white;
 
 }
 
@@ -286,14 +286,31 @@ a {
   border-radius: 4px;
 }
 
+.sites:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 20px rgb(0, 0, 0)
+}
+
+.sites-bg {
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  z-index: 50;
+}
+
+.sites-bg:hover {
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
 .sites h2 {
   font-size: 1rem;
   color: #06003b;
+  padding: 5px 0;
 }
 
 .portfolio .sites img {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 @media (max-width: 768px) {

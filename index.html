@@ -47,7 +47,9 @@
 
       <section class="portfolio" id="portfolio">
         <div class="sites" v-for="item in sites" :key="item.id" @click="abrirModal(item.id)">
-          <h2>{{item.nome}}</h2>
+          <div class="sites-bg">
+            <h2>{{item.nome}}</h2>
+          </div>
           <img :src="item.img" :alt="item.nome">
         </div>
       </section>
