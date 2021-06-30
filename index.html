@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 <body>
 
@@ -39,7 +41,9 @@
           <h3>Vue.js - JavaScript - CSS - HTML</h3>
           <h4>SEO - Seu site no topo do Google</h4>
           <p>Sites 100%<br>Responsivos e Reativos</p>
-          <p>Criação de Sites, Landing pages, Portfólios</p>
+          <p>Criação de Sites, Landing pages, Portfólios,<br>
+            Manutenção e atualizações
+          </p>
         </div>
         <div class="bg">
         </div>
@@ -67,7 +71,7 @@
             <div class="modal-img">
               <img :src="site.img" alt="site.nome">
             </div>
-            <a class="modal-button" target="_blank" :href="site.link">Ver Site</a>
+            <a class="modal-button" target="_blank" :href="site.link">Ver mais</a>
             <button @click="site = false" class="modal-fechar">X</button>
           </div>
         </section>
@@ -129,9 +133,10 @@
         </div>
       </div>
     </footer>
-
+    <a onclick="topFunction()" id="botaoTopo" href="#" class="gotopbtn"><i class="fas fa-arrow-up"></i></a>
   </div>
   
   <script src="./app.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

@@ -36,5 +36,5 @@ const vm = new Vue({
   created() {
     this.fetchSites()
   },
-})
+});
 

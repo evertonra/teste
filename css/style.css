@@ -28,6 +28,8 @@ a {
   text-decoration: none;
 }
 
+
+
 /* Nav */
 
 .nav {
@@ -203,15 +205,6 @@ a {
   font-weight: bold;
 }
 
-/* .logo {
-  position: relative;
-  z-index: 1;
-  width: 250px;
-  height: 250px;
-  transition: 2s;
-  border-radius: 50%;
-} */
-
 .logo:hover {
   filter: blur(2px);
 }
@@ -271,7 +264,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 99vw;
-  margin: 20px 0;  
+  margin: 25px 0 20px 0;  
 }
 
 .sites {
@@ -295,7 +288,7 @@ a {
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: center;
-  z-index: 50;
+  z-index: 2;
 }
 
 .sites-bg:hover {
@@ -362,7 +355,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 5;
+  z-index: 50;
   background: #fff;
   /* animation: fadeIn .7s ease-out;  */
 }
@@ -622,4 +615,50 @@ a {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+/* Botão topo */
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(30deg, #4b4b4b, #07000c);
+  border-radius: 5px;
+  bottom: 50px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.5;
+  transition: .8s;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  
+  display: none;
+}
+
+.gotopbtn:hover{
+  background: linear-gradient(30deg, #696981, #06003b);
+  opacity: 1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #020018; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #17133d 
 }

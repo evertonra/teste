@@ -56,7 +56,7 @@
   {
     "id": "spotify",
     "nome": "Cópia Spotify",
-    "img": "./img/spotify.png",
+    "img": "./img/spotify.PNG",
     "link": "https://evertonra.github.io/ProjetoSpotify/"
   }
 ]
